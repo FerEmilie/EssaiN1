@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title property.title %}
+
+{% block body %}
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-8">
+
+    </div>
+    <div class="col-md-4">
+      <h1>{{ property.title }}</h1>
+      <h2>{{ property.rooms}} pièces - {{ property.surface }} m2</h2>
+      <div class="text-primary" style="font-size:25px;">{{ property.price }} $</div>
+      <a href="#" class="btn btn-primary">Contact</a>
+    </div>
+  </div>
+  <p>{{ property.description | nl2br }}</p>
+</div>
+{% endblock %}
